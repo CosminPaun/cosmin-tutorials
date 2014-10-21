@@ -24,17 +24,17 @@ public class ConversionExamplesDate {
     }
 
     private void calcDate( long milisecs) {
-        SimpleDateFormat date_format = new SimpleDateFormat("MM dd, yyyy HH:mm");
+        SimpleDateFormat dateFormat = new SimpleDateFormat("MM dd, yyyy HH:mm");
         Date resultdate = new Date(milisecs);
-        System.out.println(date_format.format(resultdate));
+        System.out.println(dateFormat.format(resultdate));
 
     }
 
     private void writeActualDate() {
         Calendar cal = new GregorianCalendar();
         Date creationDate = cal.getTime();
-        SimpleDateFormat date_format = new SimpleDateFormat("MMM dd, yyyy HH:mm");
-        System.out.println(date_format.format(creationDate));
+        SimpleDateFormat dateFormat = new SimpleDateFormat("MMM dd, yyyy HH:mm");
+        System.out.println(dateFormat.format(creationDate));
     }
 
     public static void main(String[] args){
