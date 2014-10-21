@@ -15,7 +15,7 @@ public class CalendarTest {
         System.out.println("Month:  " + (cal1.get(Calendar.MONTH) + 1));
         System.out.println("Days: " + cal1.get(Calendar.DAY_OF_MONTH));
 
-        SimpleDateFormat date_format = new SimpleDateFormat("yyyyMMdd");
-        System.out.println(date_format.format(cal1.getTime()));
+        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyyMMdd");
+        System.out.println(dateFormat.format(cal1.getTime()));
     }
 }
